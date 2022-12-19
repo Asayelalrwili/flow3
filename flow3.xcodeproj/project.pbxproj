@@ -11,6 +11,10 @@
 		180B73582946F77400F3D121 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B73572946F77400F3D121 /* ContentView.swift */; };
 		180B735A2946F77500F3D121 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180B73592946F77500F3D121 /* Assets.xcassets */; };
 		180B735D2946F77500F3D121 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180B735C2946F77500F3D121 /* Preview Assets.xcassets */; };
+		180B73642946F87900F3D121 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180B73632946F87900F3D121 /* Signup.swift */; };
+		187E3F51294EF70100DA9EEE /* SignupID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E3F50294EF70100DA9EEE /* SignupID.swift */; };
+		187E3F57294F12A300DA9EEE /* OnBordaing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E3F56294F12A300DA9EEE /* OnBordaing.swift */; };
+		187E3F59294F14D800DA9EEE /* SignFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E3F58294F14D800DA9EEE /* SignFace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,12 @@
 		180B73572946F77400F3D121 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		180B73592946F77500F3D121 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180B735C2946F77500F3D121 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		180B73632946F87900F3D121 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		180B736629485A5400F3D121 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		186149042949D8F000381487 /* flow3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = flow3.entitlements; sourceTree = "<group>"; };
+		187E3F50294EF70100DA9EEE /* SignupID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupID.swift; sourceTree = "<group>"; };
+		187E3F56294F12A300DA9EEE /* OnBordaing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBordaing.swift; sourceTree = "<group>"; };
+		187E3F58294F14D800DA9EEE /* SignFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignFace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,14 @@
 		180B73542946F77400F3D121 /* flow3 */ = {
 			isa = PBXGroup;
 			children = (
+				186149042949D8F000381487 /* flow3.entitlements */,
+				180B736629485A5400F3D121 /* Info.plist */,
 				180B73552946F77400F3D121 /* flow3App.swift */,
 				180B73572946F77400F3D121 /* ContentView.swift */,
+				187E3F50294EF70100DA9EEE /* SignupID.swift */,
+				187E3F56294F12A300DA9EEE /* OnBordaing.swift */,
+				187E3F58294F14D800DA9EEE /* SignFace.swift */,
+				180B73632946F87900F3D121 /* Signup.swift */,
 				180B73592946F77500F3D121 /* Assets.xcassets */,
 				180B735B2946F77500F3D121 /* Preview Content */,
 			);
@@ -137,8 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187E3F57294F12A300DA9EEE /* OnBordaing.swift in Sources */,
+				187E3F59294F14D800DA9EEE /* SignFace.swift in Sources */,
+				187E3F51294EF70100DA9EEE /* SignupID.swift in Sources */,
 				180B73582946F77400F3D121 /* ContentView.swift in Sources */,
 				180B73562946F77400F3D121 /* flow3App.swift in Sources */,
+				180B73642946F87900F3D121 /* Signup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,22 +284,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = flow3/flow3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"flow3/Preview Content\"";
+				DEVELOPMENT_TEAM = C898X7HYVB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = flow3/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "we use this to unlock the phone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = example.com.flow3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flow3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -292,22 +317,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = flow3/flow3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"flow3/Preview Content\"";
+				DEVELOPMENT_TEAM = C898X7HYVB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = flow3/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "we use this to unlock the phone";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = example.com.flow3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flow3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
